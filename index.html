@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Earth</title>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Sorry, visit the website from pc please</h1>
+        <p>resolving error as soon as possible</p>
+    </div>
+    <div class="index">
+        <div class="values-container">
+            <div class="value-box1 value-box">
+                <p class="value-box-heading" >Adolescent birth rate, 15-19 year olds (per 1,000 women)</p>
+                <div class="value">
+                    <p class="value_number1" >00</p>
+                    <div class="value_chart value_chart1"></div>
+                </div>
+            </div>
+            <div class="value-box2 value-box">
+                <p class="value-box-heading" >Alcohol consumption(liters of pure alcohol per person)</p>
+                <div class="value">
+                    <p class="value_number2" >00</p>
+                    <div class="value_chart value_chart2"></div>
+                </div>
+            </div>
+            <div class="value-box3 value-box">
+                <p class="value-box-heading" >Death rate from Alzheimer's(per 100,000 people)</p>
+                <div class="value">
+                    <p class="value_number3" >00</p>
+                    <div class="value_chart value_chart3"></div>
+                </div>
+            </div>
+            <div class="value-box4 value-box">
+                <p class="value-box-heading" >Number of land animals slaughtered for meat per year</p>
+                <div class="value">
+                    <p class="value_number4" >00</p>
+                    <div class="value_chart value_chart4"></div>
+                </div>
+            </div>
+            <div class="value-box5 value-box">
+                <p class="value-box-heading" >Annual CO₂ emissions in tonnes per person</p>
+                <div class="value">
+                    <p class="value_number5" >00</p>
+                    <div class="value_chart value_chart5"></div>
+                </div>
+            </div>
+
+            <div class="value-box6 value-box">
+                <p class="value-box-heading" >Antarctic sea ice extent(max,min)</p>
+                <div class="value value6 ">
+                    <p class="value_number6_max" >00</p>
+                    <div class="value_chart value_chart6_max"></div>
+                </div>
+                <div class="value value6 ">
+                    <p class="value_number6_min" >00</p>
+                    <div class="value_chart value_chart6_min"></div>
+                </div>
+            </div>
+            <div class="value-box7 value-box">
+                <p class="value-box-heading" >Cancer death rate(per 100,000 people)</p>
+                <div class="value">
+                    <p class="value_number7" >00</p>
+                    <div class="value_chart value_chart7"></div>
+                </div>
+            </div>
+            <div class="value-box8 value-box">
+                <p class="value-box-heading" >Child mortality rate(before reaching the age of 5)</p>
+                <div class="value">
+                    <p class="value_number8" >00</p>
+                    <div class="value_chart value_chart8"></div>
+                </div>
+            </div>
+            <div class="value-box9 value-box">
+                <p class="value-box-heading" >People living in extreme poverty(below $1,$2.15,$3.65)</p>
+                 <div class="value value9 ">
+                    <p class="value_number9_1" >00</p>
+                    <div class="value_chart value_chart9_1"></div>
+                </div>
+                <div class="value value9 ">
+                    <p class="value_number9_2" >00</p>
+                    <div class="value_chart value_chart9_2"></div>
+                </div>
+                <div class="value value9 ">
+                    <p class="value_number9_3" >00</p>
+                    <div class="value_chart value_chart9_3"></div>
+                </div>
+            </div>
+            <div class="value-box10 value-box">
+                <p class="value-box-heading" >Sea level rise</p>
+                <div class="value">
+                    <p class="value_number10" >00</p>
+                    <div class="value_chart value_chart10"></div>
+                </div>
+            </div>
+            <div class="value-box11 value-box">
+
+                <div class="value-box-left">
+                    <p class="value-box-heading" >Air Pollution (NOx,SO₂,CO,BC,NH₃) <p>
+
+                    <div class="value">
+                        <p class="value_number11_1" >00</p>
+                        <div class="value_chart value_chart11_1"></div>
+                    </div>
+
+                    <div class="value">
+                        <p class="value_number11_2" >00</p>
+                        <div class="value_chart value_chart11_2"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="value-box11 value-box">
+                <div class="value-box-right">
+                    <div class="value">
+                        <p class="value_number11_3" >00</p>
+                        <div class="value_chart value_chart11_3"></div>
+                    </div>
+
+                    <div class="value">
+                        <p class="value_number11_4" >00</p>
+                        <div class="value_chart value_chart11_4"></div>
+                    </div>
+
+                    <div class="value">
+                        <p class="value_number11_5" >00</p>
+                        <div class="value_chart value_chart11_5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="index-right">
+            <h1 class="year" >2000</h1>
+            <div id="earth"></div>
+                
+         </div> 
+    </div>
+    <div class="bar">
+        <input  type="range" min="1750" max="2023" value="2000" class="slider" id="mySlider">
+    </div>
+   
+</body>
+<script>
+    window.onload = function() {
+        const slider = document.getElementById('mySlider');
+        const defaultValue = 2000; 
+        slider.value = defaultValue;
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.getElementById('mySlider');
+
+    slider.addEventListener('input', function() {
+        sliderValue = slider.value;
+        document.querySelector('.year').innerText = sliderValue;
+    });
+});
+
+</script>
+<script src="./js/Adolescent_birth_rate.js"></script>
+<script src="./js/Alcohol.js"></script>
+<script src="./js/Alzheimer.js"></script>
+<script src="./js/AnimalWelfare.js"></script>
+<script src="./js/Co2emission.js"></script>
+<script src="./js/AntarticaSeaLevel.js"></script>
+<script src="./js/Cancerdeathrate.js"></script>
+<script src="./js/ChildMortalityrate.js"></script>
+<script src="./js/ExtremePoverty.js"></script>
+<script src="./js/SeaLevel.js"></script>
+<script src="./js/AirPollution.js"></script>
+</html>
